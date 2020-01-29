@@ -2,16 +2,16 @@
 
 /* changes these values to suit your local configuration */
 
-$rrdpath = "/data/as-stats/rrd";
-$daystatsfile = "/data/as-stats/asstats_day.txt";
+$rrdpath = "/data/influxdb/AS-Stats/rrd";
+$daystatsfile = "/data/influxdb/AS-Stats/stats/asstats_day.txt";
 $rrdtool = "/usr/bin/rrdtool";
 
-$daypeerstatsfile = "/data/as-stats/peerasstats_day.txt";
+$daypeerstatsfile = "/data/influxdb/AS-Stats/stats/peerasstats_day.txt";
 $showpeeras = false;
 
 $asinfofile = "asinfo.txt";
-$knownlinksfile = "/data/as-stats/conf/knownlinks";
-$outispositive = true;
+$knownlinksfile = "/data/influxdb/AS-Stats/conf/knownlinks";
+$outispositive = false;
 $show95th = true;
 
 $ntop = 20;

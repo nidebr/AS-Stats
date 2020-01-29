@@ -67,6 +67,7 @@ function getknownlinks() {
 	global $knownlinksfile;
 
 	$fd = fopen($knownlinksfile, "r");
+	if(!$fd) die("ERROR : Can't open " . $knownlinksfile . " fix your settings in config.inc");
 	$knownlinks = array();
 	while (!feof($fd)) {
 		$line = trim(fgets($fd));
